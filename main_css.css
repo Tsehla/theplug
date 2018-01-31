@@ -33,11 +33,14 @@ body{
                         "recommend"
                         "footer1";
     font-family: 'Roboto', sans-serif;
+    background-image: url(page2/photography-gear.jpg);
+    
 }
 /*header*/
 .header{
     grid-area: header1;
     font-family: 'Dosis', sans-serif;
+    background-color: transparent;
     
 }
 .header_content{
@@ -59,6 +62,7 @@ body{
 .header_content-login{
     grid-area: login_container;
     text-align: right;
+    color: green;
     
 }
 .header_content-login i{
@@ -70,7 +74,9 @@ body{
     width:100%;
     height:120px;
     grid-area: search1;
-    background-color:gainsboro;
+    
+    
+    
     
 }
 .search_content{
@@ -81,13 +87,15 @@ body{
     grid-template-rows: 90% 10%;
     grid-template-areas:"search-text"
                         "search-bar";
-    border-bottom:1px dotted black;
+    border-bottom:1px dotted gold;
+    grid-gap:1px;
     
 }
 
 .search_content-text{
     grid-area: search-text;
     text-align: center;
+    color:white;
 }
 .search_content-text p{
     margin-top: 10px;
@@ -97,6 +105,7 @@ body{
     grid-area: search-bar;
     text-align: center;
     margin-bottom:15px;
+    background-color:silver;
     
 }
 
@@ -104,7 +113,7 @@ body{
 /*image row 1*/
 .image_row_1{
     grid-area: row1;
-    background-color:gainsboro;
+    
 }
 .row_1_image_container{
     display:grid;
@@ -114,7 +123,7 @@ body{
     grid-template-rows:75% 15%;
     grid-template-areas:"row1-image1 row1-image2 row1-image3 row1-image4"
                   "row1-image1-heading row1-image2-heading row1-image3-heading row1-image4-heading";
-                  
+    grid-gap:1px; 
 }
 .row_1_image_1 {
      grid-area:row1-image1 ;
@@ -126,6 +135,10 @@ body{
      grid-area:row1-image1-heading ;
      border:solid black 1px;
      background-color:grey;
+     color: white;
+     text-align:center;
+     margin-top:0px;
+     font-size:0.8em;
 
 }
 .row_1_image_1_heading p{
@@ -144,6 +157,10 @@ body{
      grid-area:row1-image2-heading ;
      border:solid black 1px;
      background-color:grey;
+     color: white;
+     text-align:center;
+     margin-top:0px;
+     font-size:0.8em;
 
 }
 .row_1_image_3{
@@ -175,7 +192,7 @@ body{
 /*image row 2*/
 .image_row_2{
     grid-area: row2;
-    background-color:gainsboro;
+    
 }
 .row_2_image_container{
     display:grid;
@@ -185,7 +202,7 @@ body{
     grid-template-rows:75% 15%;
     grid-template-areas:"row2-image1 row2-image2 row2-image3 row2-image4"
                   "row2-image1-heading row2-image2-heading row2-image3-heading row2-image4-heading";
-                  
+    grid-gap:1px;          
 }
 .row_2_image_1 {
      grid-area:row2-image1 ;
@@ -197,6 +214,10 @@ body{
      grid-area:row2-image1-heading ;
      border:solid black 1px;
      background-color:grey;
+     color: white;
+     text-align:center;
+     margin-top:0px;
+     font-size:0.8em;
 
 }
 .row_2_image_2 {
@@ -240,7 +261,7 @@ body{
 /*age row 3*/
 .image_row_3{
     grid-area: row3;
-    background-color:gainsboro;
+    
 }
 .row_3_image_container{
     display:grid;
@@ -250,6 +271,7 @@ body{
     grid-template-rows:75% 15%;
     grid-template-areas:"row3-image1 row3-image2 row3-image3 row3-image4"
                   "row3-image1-heading row3-image2-heading row3-image3-heading row3-image4-heading";
+    grid-gap:1px;
                   
 }
 .row_3_image_1 {
@@ -307,8 +329,10 @@ body{
 
 /*recommend bar*/
 .recommend_row{
+
     grid-area: recommend; 
-    background-color:gainsboro;
+    
+   
     
 }
 
@@ -320,12 +344,12 @@ body{
     grid-template-rows:10% 90%;
     grid-template-areas:"recommend-spacer recommend-spacer recommend-spacer recommend-spacer recommend-spacer recommend-spacer recommend-spacer"
                     "recommend-row3-image1 recommend-row3-image2 recommend-row3-image3 recommend-row3-image4 recommend-row3-image5 recommend-row3-image6 recommend-row3-image7";
-                  
+    grid-gap:1px;
                   
 }
 .recommend_spacer {
      grid-area:recommend-spacer ;
-     border-top:dotted 1px black;
+     border-top:dotted 1px gold;
      
 
 }
@@ -339,6 +363,10 @@ body{
      grid-area:recommend-row3-image2 ;
      border:solid black 1px;
      background-color:grey;
+     color: white;
+     text-align:center;
+     margin-top:0px;
+     font-size:0.5em;
 
 }
 .recommend_row_3_image_3{
@@ -376,6 +404,7 @@ body{
 /*footer*/
 .footer{
     grid-area: footer1;
+    background-color:white;
 }
 .footer_container{
     display:grid;
@@ -699,7 +728,5 @@ body{
       color:red;
 
 }
-
-
 
 
